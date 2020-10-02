@@ -23,8 +23,9 @@ for line in file: #Splits into key, value using last comma
 Dict.pop("Job Class")
 Dict.pop("Total")
 
-population = list(Dict.keys()) #The things we can randomize from
-weights = [float(x) for x in list(Dict.values())] #The percent chances of each thing
-print(choices(population, weights, k=1)[0]) #Uses choices from Random library for output
+def returnRandomByWeight(dictionary):
+    population = list(Dict.keys()) #The things we can randomize from
+    weights = [float(x) for x in list(Dict.values())] #The percent chances of each thing
+    return choices(population, weights, k=1)[0] #Uses choices from Random library for output
 
 file.close() #Closes file
