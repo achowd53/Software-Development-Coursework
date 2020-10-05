@@ -1,0 +1,12 @@
+Team Kent Cockroaches (Arib Chowdhury, Ian Chen-Adamczyk, William Yin)
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity
+2020-10-02
+
+python3 -m venv ~/myherozero
+
+This command creates a virtual environment in a directory called myherozero in the home directory. It requires you to pip install virtualenv to run. This virtual environment allows you to create an isolated environment for Python where you can use different package dependencies and package versions from Python projects elsewhere on your system.
+
+
+Sources
+https://realpython.com/python-virtual-environments-a-primer/
