@@ -8,4 +8,11 @@ Notes regarding app.py execution:
     - learned table structure in html
 
 Notes regarding egoless programming:
-    - 
+    - social interaction is very important
+    - programs are subject to objectivity unlike art or writing
+    - (IMPORTANT) Being alone makes you blind to your own errors, and others can help you see that.
+    - mistakes in code you've written aren't attacks on you.
+    - fixing errors is key to making better code, treating those fixes as insults leads to it being stalled
+    - be nice when you find errors! Being aggressive about it discourages checking for future errors ;;
+    - don't think of it as criticism on you 
+    - constructive criticism is always founded, we should learn to accept it.
