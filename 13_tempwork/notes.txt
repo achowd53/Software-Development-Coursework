@@ -1,0 +1,11 @@
+# Team Hairy Owls(Ethan Shenker, Arib Chowdhury, Jonathan Lee)
+# SoftDev
+# K13 - Template for Success
+# 2020-10-15
+
+Notes regarding app.py execution:
+    - have to reference path of file if csv file isn't in same directory as app.py
+    - learned table structure in html
+
+Notes regarding egoless programming:
+    - 

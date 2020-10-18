@@ -1,0 +1,34 @@
+<!--
+    # Team Hairy Owls(Ethan Shenker, Arib Chowdhury, Jonathan Lee)
+    # SoftDev
+    # K13 - - Template for Success
+    # 2020-10-15
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+    <h1>Team Hairy Owls (Ethan Shenker, Arib Chowdhury, Jonathan Lee)</h1>
+    <h3>SoftDev</h3>
+    <h3>K13 - - Template for Success</h3>
+    <h3>2020-10-15</h3>
+
+    <h4>Random occupation: {{ occ }}</h4>
+
+    <table>
+      <tr>
+        <th>Job Title</th>
+        <th>Percentage</th>
+      </tr>
+      {% for row in table %}
+      <tr>
+        <td>{{row["Job Class"]}}</td>
+        <td>{{row["Percentage"]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
