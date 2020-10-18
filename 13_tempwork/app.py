@@ -8,8 +8,11 @@ from occupations import select, get_table
 
 app = Flask(__name__)
 
-
 @app.route("/")
+def main():
+    return "No hablo queso!"
+    
+@app.route("/occupyflaskst")
 def main():
     return render_template("tablified.html", title="Occupations", occ=select(), table=get_table())
 
