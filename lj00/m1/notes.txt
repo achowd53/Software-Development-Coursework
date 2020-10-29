@@ -1,0 +1,19 @@
+Arib Chowdhury
+SoftDev
+KLJ00 -- Le Voyage de Learnination avec Mongo, Première Phase
+2020-10-27
+
+MongoDB is a NoSQL database, doesn't store data in tables, instead puts data in documents (Its a NoSQL DocumentDB)
+Documents store data as field, value pairs
+Collection stores many documents
+Database stores many collections
+Atlas is a clud database with MongoDB at its core for data storage and retrieval
+Atlas users can deploy clusters which are groups of servers that store your data and are linked as a replica set.
+Replica Sets are connected MongoDB instances storing the same data
+Instance is a single machine locally or in the cloud, running a certain software
+Replica Set helps to keep backups unless anything goes wrong with one of the instances
+Atlas:
+ -Manages cluster creation
+ -Runs and maintains database employment
+ -Uses cloud service provider of your choice
+ -Experiments with new tools and features

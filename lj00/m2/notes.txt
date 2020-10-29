@@ -1,0 +1,51 @@
+Arib Chowdhury
+SoftDev
+KLJ00 -- Le Voyage de Learnination avec Mongo, Première Phase
+2020-10-27
+
+Documents are in JSON format so:
+-Starts and ends with braces
+-Key and value seperated by colon
+-Key value pairs seperated by commas
+-Keys in quotation marks
+
+Sub-Documents are documents as a value in a document
+
+JSON is friendly, readable, familiar but is text-based, space consuming, and limited in terms of data structures
+BSON is a binary representation of JSON format to optimize all the faults of JSON
+
+mongodump --uri "<Atlas Cluster URI>"
+-Exports in BSON
+mongoexport --uri "<Atlas Cluster URI>"
+-Exports in JSON
+
+URI-Uniform Resource Identifier (srv)
+For our case its:
+	mongodb+srv://user:password@clusterURI.mongodb.net/database
+
+mongostore --uri "<Atlas Cluster URI>" --drop dump
+-Imports data in BSON
+mongoimport  --uri "<Atlas Cluster URI>" --drop=<filename>.json
+-Imports data in JSON
+
+Using Data Explorer
+Namespace: Concatenation of database name and collection name
+
+show dbs
+-shows list of databases in cluster
+use <database>
+-navigates to database
+show collections
+-shows list of collections in database
+db.collectioname.find({known parameters/query})
+-Outputs first 20 documents that match query
+it
+-Iterates through cursor (allows viewing of more documents in find)
+Def block{
+cursor - a pointer to a result set of query
+pointer - a direct adrress of the memory location
+}
+db.<collection name>.find({query}).count()  
+-Counts number of documents matching query
+db.<collection name>.find({query}).pretty()  
+-Makes documents more readable by seperating documents into lines
