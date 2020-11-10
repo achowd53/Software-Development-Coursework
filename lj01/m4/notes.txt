@@ -1,7 +1,8 @@
-﻿Team 13 (Madeleine Andersen, Arib Chowdhury)
+Team Orange Pigeons — Maddy Andersen and Arib Chowdhury
 SoftDev
-KLJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
-2020-11-10
+LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase — MongoDB Chapters 3 & 4
+2020-11-12
+
 * MQL operators
    * Update operators: enable us to modify data in the database
       * Ex: $inc, $set, $unset
@@ -10,11 +11,11 @@ KLJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
    * $eq → equal to
       * Used as the default operator when an operator is not specified
    * $neq → not equal to
-   * $gt → greater than 
-   * $lt → less than 
-   * $gte → greater than or equal to 
+   * $gt → greater than
+   * $lt → less than
+   * $gte → greater than or equal to
    * $lte → less than or equal to
-* Query operators — logic 
+* Query operators — logic
    * {<operator> : [{statement1}, {statement2}, …]}
       * $and → match all of the specified query clauses
          * Used as the default operator when an operator is not specified
@@ -42,13 +43,13 @@ KLJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
 * Array Operators and Projection
    * Projection → only include the price and address fields in the cursor result
       * db.<collection>.find({<query>} , {<projection>})
-         * 1 include the field 
+         * 1 include the field
          * 0 exclude the field
          * Use only 1s or only 0s
             * Exceptions is when you want to show a field but explicitly exclude the “_id” field → { “_id: 0” , <field>:1 }
       * $elemMatch (can be used in query or projection parts of a statement) → matches documents that contain an array field with at least one element that matches the specified query criteria OR projects only the array elements with at least one element that matches the specified criteria
          * { <field> : {“$elemMatch” : {<field> : <value>}}}
 * Querying Arrays and Sub-Documents
-   * MQL uses dot-notation to specify the address of nested elements in a document 
+   * MQL uses dot-notation to specify the address of nested elements in a document
       * To use in arrays, specify the position of the element in the array:
          * db.collection.find( {field1.other field.also a field”: “value”})

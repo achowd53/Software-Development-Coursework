@@ -1,7 +1,8 @@
-﻿Team 13 (Madeleine Andersen, Arib Chowdhury)
+﻿Team Orange Pigeons — Maddy Andersen and Arib Chowdhury
 SoftDev
-KLJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
-2020-11-10
+LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase — MongoDB Chapters 3 & 4
+2020-11-12
+
 * When inserting new documents, you can either use JSON notation, or you can edit one “field” : “value” pair at a time using the default view (you have a choice!)
 * _id → every document MUST have a unique _id value
    * You can have a collection where all the documents are identical aside from their _id value (not a good use of memory)
@@ -9,7 +10,7 @@ KLJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
    * Filled with a “value” that is of type ObjectId()
 * ObjectID(): default value for the _id field unless otherwise specified
    * You can select a non ObjectId type value when inserting a new document, as long as that value is unique
-* (shell) When you try to insert a collection to a database that already contains the same document, you get a lot of the same duplicate key error 
+* (shell) When you try to insert a collection to a database that already contains the same document, you get a lot of the same duplicate key error
    * Must use --drop to remove the collection from the database before adding it back (to avoid duplicate key error)
 * Can also use the insert command to insert documents through the shell
    * Connect to atlas cluster
