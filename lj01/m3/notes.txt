@@ -1,0 +1,34 @@
+﻿Team 13 (Madeleine Andersen, Arib Chowdhury)
+SoftDev
+KLJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
+2020-11-10
+* When inserting new documents, you can either use JSON notation, or you can edit one “field” : “value” pair at a time using the default view (you have a choice!)
+* _id → every document MUST have a unique _id value
+   * You can have a collection where all the documents are identical aside from their _id value (not a good use of memory)
+   * You can have a collection where all of the documents do not share any “field” names in common (very disorganized)
+   * Filled with a “value” that is of type ObjectId()
+* ObjectID(): default value for the _id field unless otherwise specified
+   * You can select a non ObjectId type value when inserting a new document, as long as that value is unique
+* (shell) When you try to insert a collection to a database that already contains the same document, you get a lot of the same duplicate key error 
+   * Must use --drop to remove the collection from the database before adding it back (to avoid duplicate key error)
+* Can also use the insert command to insert documents through the shell
+   * Connect to atlas cluster
+   * Navigate to correct database
+   * db.inspections.findOne(); → returns a random document from the collection
+   * db.inspections.insert({...}) → inserts document into collection (_id value must be different)
+* To insert multiple documents at the same time:
+   * db.inspections.insert([ { "test": 1 }, { "test": 2 }, { "test": 3 } ])
+   * If you want to specify the _id value: db.inspections.insert([{ "_id": 1, "test": 1 },{ "_id": 2, "test": 2 }, { "_id": 3, "test": 3 }])
+      * Default value is to add documents in the order they are listed (insert will stop at first duplicate key error)
+      * If you don’t want them to be ordered based on the list, include {"ordered": false} in your command
+* Implicit creation of collections and databases: if you insert a document into a collection that doesn’t exist, MongoDB will automatically create a new collection for you (MongoDB will also do the same for databases)
+* Can edit documents using the Edit button in the Data Explorer
+* To update documents using the shell:
+   * db.collection.updateOne({ "field": "value" }, { "$set": { "<field>": <new value> } }) → sets field value to a new specified value
+   * db.collection.updateMany({ "field": "value" }, { "$inc": { "<field>": <increment value> } }) → increments field value by a specified amount
+   * {$push: {<field1>:<value1>, …}} → adds an element to an array field
+* Can delete documents using the Delete button in the Data Explorer
+* To delete documents using the shell:
+   * deleteOne(“_id”:<value>)
+   * deleteMany
+* To delete a collection: db.collection.drop()
