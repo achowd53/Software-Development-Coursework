@@ -1,0 +1,20 @@
+Arib Chowdhury
+SoftDev
+KLJ02 -- Le Voyage de Learnination avec Mongo, Troisième Phase
+2020-11-24
+
+Atlas has an indexes tab to tell you the usages of all your indexes
+Schema Anti-Patterns provides advice about data model after enough queries
+Aggregation lets you set up aggregation frameworks directly in the page
+
+Organizations let you group projects, teams, and billing at the highest level
+
+Realm offers you services to create cross-platform projects
+Charts lets you create dynamic data visualizations
+
+Compass lets you provide connection information for a data source and shows you all the databases in that source along with their storage size, collection numbers, and indexes
+For each collection it also tells you the number of documents, avg document size, total document size, number of indexes, and total index sizes
+Then it lets you look at each document and lets you filter through everything like with Atlas
+Has a schema tab to show breakdown by frequency 
+Has an explain option to show a summary of the query performance with finding documents
+Has a validation tab to dictate whats allowed and not allowed in your database, such as requiring fields to be in a certain range, of a certain datatype, etc.

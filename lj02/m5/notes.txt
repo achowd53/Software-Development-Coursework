@@ -1,0 +1,30 @@
+Arib Chowdhury
+SoftDev
+KLJ02 -- Le Voyage de Learnination avec Mongo, Troisième Phase
+2020-11-24
+
+Aggregation Framework: Another way to query data in MongoDB, MQL lets you filter and update while Aggregation lets you group, compute, and reshape data
+-Syntax: db.collections.aggregate()
+-$match lets you find documents that have the fields/valuse in them
+-$project lets you choose which fields to output (similar to second field in .find)
+-$group lets you group data
+	-Grouping by expression: {$group:{_id:"$address.country"}}
+	-Counting values in groups: {$group:{_id:"$address.country","count":{"$sum":1}}}
+
+Cursor Methods that come after gettig results
+-.sort({"pop":1,"city":-1}); The former sorts in increasing order, the other decreasing
+-.limit(n); limit it to n results
+*Usually you sort then limit so MongoDB assusmes .limit.sort means .sort.limit
+
+db.collection.createIndex({field:increasing/decreasing order(1/-1)}}
+-Creates an index for the field so MongoDB only has to look through the index rather than all documents in the collection
+
+Compound index
+-db.collection.createIndex(index1,index2,...)
+-Keeps track of all index1s and index2s sorted by index1 then 2
+
+Data is stored in the way that it is used
+
+Upsert
+-db.collection.updateOne({query-to-locate},{update},{"upsert":true}}
+-"upsert":true doesn't need to be mentioned multiple times, it changes default value
