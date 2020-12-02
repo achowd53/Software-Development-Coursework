@@ -1,6 +1,6 @@
-Arib Chowdhury
+Team Hairy Owls - Arib Chowdhury, Ethan Shenker, Jon Lee
 SoftDev
-KLJ02 -- Le Voyage de Learnination avec Mongo, Troisième Phase
+KLJ02: Le Voyage de Learnination avec Mongo, Troisième Phase
 2020-11-24
 
 Atlas has an indexes tab to tell you the usages of all your indexes
