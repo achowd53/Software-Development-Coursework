@@ -1,0 +1,19 @@
+Team Greedy Toads: Arib Chowdhury, Helena Williams, Benjamin Gallai, Anya Zorin
+SoftDev
+K16: No Trouble
+2020-12-14
+
+SQLite Shell
+- Open by running sqlite3 in terminal in directory of db file
+- Use '.open db_name' to open db
+- select * from table_name; to view table from db
+
+
+Python Script for SQLite
+- Requires sqlite3 and csv for imports
+- Can read column names in csv DictReader object with .fieldnames
+- db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
+- c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
+- c.execute(command)            # run SQL statement
+- db.commit()                   #save changes
+- db.close()                    #close database

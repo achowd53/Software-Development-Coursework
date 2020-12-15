@@ -25,7 +25,6 @@ file("courses.csv")
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
 command = ""
 c.execute(command)    # run SQL statement
-
 #==========================================================
 
 db.commit() #save changes
