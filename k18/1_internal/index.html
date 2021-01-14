@@ -10,7 +10,9 @@
     <meta charset="utf-8">
     <title>foo title</title>
     <style>
-      * {
+
+    /* we discovered that setting padding zero and margin zero to be beneficial */
+     * {
         padding: 0;
         margin: 0;
       }
@@ -28,6 +30,7 @@
       .border {
         border: 8px solid #666666;
       }
+      /* makes the "body" display as a table*/
 
       .body {
         display: table;
@@ -46,11 +49,14 @@
         padding-left: 10px;
       }
 
+
+    /* we discovered that setting padding zero and margin zero to be beneficial */ 
       .nav ul {
         list-style-type: none;
         padding-left: 10px;
       }
 
+      /* text-decoration: removes the underline */
       .nav a {
         color: #dcdcdc;
         text-decoration: none;

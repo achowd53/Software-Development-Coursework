@@ -1,0 +1,11 @@
+Carlos "Karl" Hernandez
+SoftDev
+K18 -- Basic CSS
+2021-01-13
+
+Notes:
+	- The <div> tag is an HTML container that allows us to section off the HTML, so we can add CSS to certain parts
+	- We noticed that there was a `&copy` that would be converted into the C.
+	- We noticed we couldn't go beyond 100% width or it would "overflow"
+	- We learned to remove bullet points by using list-style-type: none
+	- It wasn't difficult, but it was tedious to replicate an image because we wanted to be pixel perfect.
