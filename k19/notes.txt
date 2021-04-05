@@ -1,0 +1,10 @@
+Team Cornwall Guppies (Michelle Thaung, Arib Chowdhury)
+SoftDev
+K19 -- A RESTful Journey Skyward
+2021-04-05
+
+We predicted that making a simple HTTP request using our API key will work.
+It worked and we got back a successful response <Response [200]>
+
+Use urllib.request.urlopen() to open a file and use the .read() method on it in order to access the contents of the URL as a string
+The string can be loaded as a URL using the load() method from the json library
