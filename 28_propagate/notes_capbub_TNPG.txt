@@ -1,0 +1,32 @@
+New York Ostriches (Anya Zorin, Arib Chowdhury)
+SoftDev
+K28 -- Bubble Bubble Toil Trouble
+2021-05-11
+
+V1:
+- Prediction that it will alert text inside table element when clicked
+- Observation matched up with prediction
+
+V2:
+- Prediction that it will alert the individual cell, the row that its in, as well as the entire table when a cell is clicked on
+-Observation matches up with prediction though it also alerts the html tags within the row and table as well
+// Q: When user clicks on a cell, in what order will the pop-ups appear?
+The order the pop ups will occur is from deepest element outward regardless of order of appearance in code.
+
+V3: 
+// Q: When user clicks on a cell, in what order will the pop-ups appear?
+- Prediction that it will act the same as before without uncommenting anything
+- Observation that alerts came in order of table to cell to row, possibly due to the true parameter at the end of the third addEventListener
+//Q: What will happen when next line is uncommented?
+- Prediction that it will only alert the table in html
+- Observation matches up with prediction
+
+V4:
+- Prediction that it will act the same as V2 without uncommenting anything
+- Observed that it will alert in the opposite order (table -> row -> cell) due to the true paramter in all the addEventListeners
+//Q: What will happen when next line is uncommented?
+- Prediction that it will only alert whats in the cell when cell clicked on
+- Observation that it will only alert the table in HTML before stopping when a cell is clicked on
+//Q: Does the order in which the event listeners are attached matter?
+- Prediction: No
+- Observations matched up as predicted
