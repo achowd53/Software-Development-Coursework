@@ -20,6 +20,9 @@ V3:
 //Q: What will happen when next line is uncommented?
 - Prediction that it will only alert the table in html
 - Observation matches up with prediction
+//Q: What effect does the boolean arg have? 
+-Prediction that it will act the same as before
+-Observation that setting the boolean to true makes the table html alert first, and setting it as false makes it alert last
 
 V4:
 - Prediction that it will act the same as V2 without uncommenting anything
@@ -30,3 +33,5 @@ V4:
 //Q: Does the order in which the event listeners are attached matter?
 - Prediction: No
 - Observations matched up as predicted
+//Q: What effect does the boolean arg have in each?
+-the true boolean makes the element alert first with priority to the outermost element (table-->row-->cell), and the flase boolean will make an element alert last, once again giving most priority to table, then row, then cell. 

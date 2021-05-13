@@ -21,4 +21,3 @@ table.addEventListener('click', clicky);
 
 
 // Q: When user clicks on a cell, in what order will the pop-ups appear?
-
